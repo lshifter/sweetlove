@@ -1,92 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet Her Now!</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(45deg, #ff6699, #ff3366);
-            overflow: hidden;
-            position: relative;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        .container {
-            position: relative;
-            text-align: center;
-            z-index: 1;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 22px;
-            font-weight: bold;
-            color: white;
-            background: linear-gradient(45deg, #ff1493, #ff4500);
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            text-decoration: none;
-            box-shadow: 0px 4px 10px rgba(255, 69, 0, 0.6);
-            transition: 0.3s;
-        }
-        .btn:hover {
-            transform: scale(1.1);
-        }
-        .heart {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: red;
-            clip-path: path('M10 30 A10 10 0 1 1 30 10 A10 10 0 1 1 50 30 Q30 50 10 30');
-            opacity: 0.6;
-            animation: float 4s infinite ease-in-out;
-        }
-        @keyframes float {
-            0% { transform: translateY(0) scale(1); opacity: 0.6; }
-            50% { transform: translateY(-20px) scale(1.1); opacity: 0.8; }
-            100% { transform: translateY(-40px) scale(1); opacity: 0.6; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Love</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .btn {
+      background-color: #ff4081;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s ease, background-color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background-color: #e91e63;
+    }
+
+    .emoji {
+      font-size: 1.3em;
+    }
+
+    @media (min-width: 600px) {
+      .buttons {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="overlay"></div>
-    <div class="container">
-        <h1>She is waiting for your message! 😍</h1>
-        <a href="https://luh2hrm.datepleasure.com/m99bd59" class="btn">Start Chatting 💌</a>
-    </div>
-    <script>
-        function createHeart() {
-            const heart = document.createElement('div');
-            heart.classList.add('heart');
-            heart.style.left = Math.random() * 100 + 'vw';
-            heart.style.top = Math.random() * 100 + 'vh';
-            heart.style.animationDuration = Math.random() * 3 + 2 + 's';
-            document.body.appendChild(heart);
-            setTimeout(() => heart.remove(), 4000);
-        }
-        setInterval(createHeart, 300);
-    </script>
+
+  <h1>Sweet Love 💖</h1>
+  <p>Connect with your perfect match now! Choose a way to chat or see exclusive photos 🔥</p>
+
+  <div class="buttons">
+    <a href="https://lshifter.github.io/sweetlove/" class="btn"><span class="emoji">💬</span> WhatsApp Chat</a>
+    <a href="https://lshifter.github.io/sweetlove/" class="btn"><span class="emoji">👻</span> Snapchat Connect</a>
+    <a href="https://lshifter.github.io/sweetlove/" class="btn"><span class="emoji">🎥</span> TikTok Link</a>
+    <a href="https://lshifter.github.io/sweetlove/" class="btn"><span class="emoji">🔞</span> View 18+ Photos</a>
+  </div>
+
 </body>
 </html>
+
 
 
